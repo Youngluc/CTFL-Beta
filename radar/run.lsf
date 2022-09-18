@@ -1,0 +1,7 @@
+#BSUB -J generate
+#BSUB -n 28
+#BSUB -o %J.out
+#BSUB -e %J.err
+#BSUB -q normal
+cd /seu_share/home/zy_chengh/radar PATH
+matlab -r generate
